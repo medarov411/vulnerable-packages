@@ -36,3 +36,4 @@ RUN echo 'echo Started FTP Server@ `hostname -i 2>/dev/null`:21' > /root/run.sh 
 CMD ["/bin/bash", "-c", "/bin/bash run.sh"]
 
 COPY flag.txt /
+RUN rm flag.txt
